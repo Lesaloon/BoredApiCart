@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Things to do</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- a card that show a thig to do -->
+    <!-- it contain the folowing :
+        activity name
+        the type of activity
+        the number of people
+        the price
+        the accessibilityùù
+        the link to the activity
+
+        for the accessibility it will be a number from 0 to 1
+        0 is accessible
+        1 is not accessible
+
+        the price will be a number from 0 to 1
+        0 is free
+        1 is expensive
+
+        those two will be used to add bars to the card
+    -->
+    <div class="card">
+        <h2>Activity: <span id="activity"></span></h2>
+
+        <p>Type : <span id="type"></span></p>
+        <p>Number of participants: <span id="participants"></span></p>
+        <p>Price:</p>
+        <div class="price-bar">
+            <div class="price-bar-fill"></div>
+        </div>
+        <p>Accessibility</p>
+        <div class="accessibility-bar">
+            <div class="accessibility-bar-fill"></div>
+        </div>
+        <a class="link" href="#"><button class="link-btn">Link for more details</button></a>
+       <button class="reroll-btn"> ça ne me plait pas ...</button>
+       <button class="dark-mode-btn">Dark Mode</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
